@@ -58,4 +58,48 @@ A-Frame是什么？
             <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
         </a-box>
     </a-scene>
-
+增加交互
+    <a-scene>
+        <a-assets>
+            <img id="texture" src="images/70.jpg">
+        </a-assets>
+        <a-box color="#fff" width="2" height="4" depth="2"
+               position="-5 2 -7" rotation="0 0 0" scale="1 1 1"
+               src="#texture">
+            <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-box>
+        <a-camera position="0 1.8 0">
+            <a-cursor color="#2E3A87"></a-cursor>
+        </a-camera>
+    </a-scene>
+增加灯光
+    <a-scene>
+        <a-assets>
+            <img id="texture" src="images/70.jpg">
+        </a-assets>
+        <a-box color="#fff" width="2" height="4" depth="2"
+               position="-5 2 -7" rotation="0 0 0" scale="1 1 1"
+               src="#texture">
+            <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-box>
+        <a-light type="point" color="#fff" position="0 2 0" look-at="a-box"></a-light>
+        <a-camera position="0 1.8 0">
+            <a-cursor color="#2E3A87"></a-cursor>
+        </a-camera>
+    </a-scene>
+添加天空背景
+    <a-scene>
+        <a-assets>
+            <img id="texture" src="images/70.jpg">
+        </a-assets>
+        <a-box color="#fff" width="2" height="4" depth="2"
+               position="-5 2 -7" rotation="0 0 0" scale="1 1 1"
+               src="#texture">
+            <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-box>
+        <a-light type="point" color="#fff" position="0 2 0" look-at="a-box"></a-light>
+        <a-sky color="#9bd5e7"></a-sky>
+        <a-camera position="0 1.8 0">
+            <a-cursor color="#2E3A87"></a-cursor>
+        </a-camera>
+    </a-scene>

@@ -18,8 +18,11 @@
     <a-box color="#fff" width="2" height="4" depth="2"
            position="-5 2 -7" rotation="0 0 0" scale="1 1 1"
            src="#texture">
-        <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
     </a-box>
+    <a-camera position="0 1.8 0">
+        <a-cursor color="#2E3A87"></a-cursor>
+    </a-camera>
 </a-scene>
 </body>
 </html>
