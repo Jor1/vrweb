@@ -1,0 +1,61 @@
+A-Frame是什么？
+    A-Frame（https://aframe.io/）是一个开源框架，用于使用自定义的HTML元素创建WebVR体验，
+    可用于在桌面浏览器、智能手机以及 Oculus Rift（一款虚拟现实设备，头戴式显示器）上建立虚拟场景，
+    A-Frame 可以让创建 WebVR 体验变得更简单。
+为什么使用A-Frame？
+    A-Frame 设计成 web 开发者很熟悉的模样。它封装了 WebGL 的功能到 HTML 自定义元素，
+    有了这个框架，Web程序员无需学习一门全新的语言或者类似于Unity这样的三维引擎就可以在Web开发中加入虚拟现实支持，
+    所以创建一个高性能的虚拟现实体验就像下列代码那样简单：
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="dist/aframe-v0.3.0.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sphere position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-box position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
+            <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+            <a-plane rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+            <a-sky color="#ECECEC"></a-sky>
+            <a-entity position="0 0 3.8">
+                <a-camera></a-camera>
+            </a-entity>
+        </a-scene>
+    </body>
+    </html>
+
+创建一个基本的场景
+添加一个box
+    <a-scene>
+      <a-box color="#6173F4" width="2" height="4" depth="2"></a-box>
+    </a-scene>
+转换box
+    <a-scene>
+      <a-box color="#6173F4" width="2" height="4" depth="2"
+             position="-10 2 -5" rotation="0 0 45" scale="2 0.5 3"></a-box>
+    </a-scene>
+为box添加材质
+    <a-scene>
+        <a-assets>
+            <img id="texture" src="images/black.png">
+        </a-assets>
+        <a-box color="#6173F4" width="2" height="4" depth="2"
+               position="-5 2 -5" rotation="0 0 45" scale="2 0.5 3"
+               src="#texture"></a-box>
+    </a-scene>
+增加动画效果
+    <a-scene>
+        <a-assets>
+            <img id="texture" src="images/70.jpg">
+        </a-assets>
+        <a-box color="#fff" width="2" height="4" depth="2"
+               position="-5 2 -7" rotation="0 0 0" scale="1 1 1"
+               src="#texture">
+            <a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-box>
+    </a-scene>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="dist/aframe-v0.3.0.js"></script>
+    <style>
+        .a-enter-vr{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<a-scene>
+    <!--<a-entity id="t" position="0 4 0">-->
+        <!--<a-box width="12" height="4.3" depth="3" color="#0080cc"></a-box>-->
+        <!--<a-box width="4.5" height="11.7" depth="3" color="#0080cc" position="0 -8 0"></a-box>-->
+    <!--</a-entity>-->
+    <a-entity position="0 4 0">
+        <a-ring color="#0080cc" radius-inner="1" radius-outer="2"></a-ring>
+    </a-entity>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-entity position="0 0 20">
+        <a-camera></a-camera>
+    </a-entity>
+</a-scene>
+</body>
+</html>
