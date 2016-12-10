@@ -3,15 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+		<script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
 	</head>
 	<body>
-		<a-scene>
-		  <a-box color="#6173F4" width="2" height="2" depth="2" position="-3 0 0" rotation="0 0 0" scale="1 1 1" src="img/dog.jpg"></a-box>
-		  <a-box color="#6173F4" width="2" height="2" depth="2" position="0 0 0" rotation="0 0 0" scale="1 1 1" src="img/dog.jpg"></a-box>
-		   <a-box color="#6173F4" width="2" height="2" depth="2" position="3 0 0" rotation="0 0 0" scale="1 1 1" src="img/dog.jpg">
-		   		<a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
-		   </a-box>
-		</a-scene>
+	<a-scene>
+		<a-box color="#6173F4" width="2" height="2" depth="2" position="-3 0 0" rotation="0 0 0" scale="1 1 1" src="http://jor1.github.io/vrweb/img/dog.jpg"></a-box>
+		<a-box color="#6173F4" width="2" height="2" depth="2" position="0 0 0" rotation="0 0 0" scale="1 1 1" src="http://jor1.github.io/vrweb/img/dog.jpg"></a-box>
+		<a-box color="#6173F4" width="2" height="2" depth="2" position="3 0 0" rotation="0 0 0" scale="1 1 1" src="http://jor1.github.io/vrweb/img/dog.jpg">
+			<a-animation attribute="rotation" repeat="indefinite" to="0 360 0"></a-animation>
+		</a-box>
+		<a-light type="point" color="#fff1ba" position="-3 5 5"></a-light>
+		<a-light type="point" color="#fff1ba" position="0 5 5"></a-light>
+		<a-light type="point" color="#fff1ba" position="3 5 5"></a-light>
+		<a-sky color="#ECECEC"></a-sky>
+		<a-entity position="0 0 4">
+			<a-camera></a-camera>
+		</a-entity>
+	</a-scene>
 	</body>
 </html>
