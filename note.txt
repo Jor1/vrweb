@@ -1,4 +1,4 @@
-A-Frame是什么？
+什么是A-Frame？
     A-Frame（https://aframe.io/）是一个开源框架，用于使用自定义的HTML元素创建WebVR体验，
     可用于在桌面浏览器、智能手机以及 Oculus Rift（一款虚拟现实设备，头戴式显示器）上建立虚拟场景，
     A-Frame 可以让创建 WebVR 体验变得更简单。
@@ -33,6 +33,8 @@ A-Frame是什么？
     <a-scene>
       <a-box color="#6173F4" width="2" height="4" depth="2"></a-box>
     </a-scene>
+    就像普通的HTML元素一样，我们可以通过设置HTML属性设置元素。在这里，我们为盒子定义了颜色，宽度，高度，深度。
+    平板显示器默认的控制方案，让我们可以通过单击拖动鼠标和WASD键的效果。使用虚拟现实后，默认的控制方案将是环顾周围控制视角，如果有虚拟现实耳机，可以在房间随意走动浏览场景效果。
 转换box
     <a-scene>
       <a-box color="#6173F4" width="2" height="4" depth="2"
