@@ -7,9 +7,18 @@
 </head>
 <body>
 <a-scene>
+    <a-assets>
+        <img id="texture" src="https://raw.githubusercontent.com/Jor1/vrweb/gh-pages/images/19.jpg">
+    </a-assets>
     <a-box color="#fff" width="2" height="2" depth="2"
-           position="-5 2 -6" rotation="0 0 45" scale="2 0.5 3"
-           src="http://image.tupian114.com/20120801/19392348.jpg"></a-box>
+           position="-2 -1 -6" rotation="0 0 0" scale="1 1 1"
+           src="#texture">
+        <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+    </a-box>
+    <a-sky color="#ebebeb"></a-sky>
+    <a-camera position="0 1.8 0">
+        <a-cursor color="#1081de"></a-cursor>
+    </a-camera>
 </a-scene>
 </body>
 </html>
